@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/usuarios', [UsuarioController::class, 'show']);
+Route::get('/usuarios/{id}', [UsuarioController::class, 'show']);

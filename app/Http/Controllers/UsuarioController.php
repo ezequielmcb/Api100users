@@ -7,10 +7,14 @@ use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
 {
-    public function show()
+    public function index()
     {
         $usuario = Usuario::all();
-
+        return $usuario;
+    }
+    public function show($id)
+    {
+        $usuario = Usuario::find($id);
         return $usuario;
     }
 }
